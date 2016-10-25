@@ -49,5 +49,6 @@ class E1Test < Minitest::Test
     assert_equal([2, 3, 3, 1], amuse([88, 100, 100, 5]))
     assert_equal([4, 3, 2, 1], amuse([101, 99, 98, 5]))
     assert_equal([5, 4, 3, 2, 1], amuse([102, 101, 99, 98, 5]))
+    assert_equal([4, 2, 4, 3, 1], amuse([102, 98, 102, 99, 5]))
   end
 end
