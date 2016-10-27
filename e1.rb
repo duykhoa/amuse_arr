@@ -50,5 +50,10 @@ class E1Test < Minitest::Test
     assert_equal([4, 3, 2, 1], amuse([101, 99, 98, 5]))
     assert_equal([5, 4, 3, 2, 1], amuse([102, 101, 99, 98, 5]))
     assert_equal([4, 2, 4, 3, 1], amuse([102, 98, 102, 99, 5]))
+
+    amused_arr = 100.downto(1).to_a.reverse
+    input_arr = 150.downto(51).to_a.reverse
+
+    assert_equal(amused_arr, amuse(input_arr))
   end
 end
